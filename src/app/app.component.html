@@ -1,0 +1,111 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="homepage.css" />
+  </head> 
+  <body>-->
+<div class="header">
+  <h1 nowrap style="font-size: 35px">Joi Ride</h1>
+  <h2 nowrap style="font-size: 25px">Search</h2>
+</div>
+
+<div class="content">
+  <form
+    form
+    method="post"
+    action="result.component.html"
+    id="myForm"
+    target="myNewWindow"
+    class="bg-light border rounded w-50 mx-auto mt-5 p-3"
+  >
+    <!--<h2 class="mt-2 mb-4">Contact Form</h2> -->
+    <br /><br /><br />
+    <label for="num_stops" style="color: #144d41">
+      Please choose number of citys you'll be stopping in
+    </label>
+
+    <select
+      name="num_stops"
+      id="num_stops"
+      style="font-size: 20"
+      onchange="changeFunc()"
+    >
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+
+    <br /><br /><br /><br /><br />
+
+    <label for="point_a" style="color: #144d41"> address of Point A </label>
+    <input type="text" id="point_a" name="point_a" size="47" required />
+
+    <br />
+
+    <label for="point_a" style="color: #144d41"> => address of Point B </label>
+    <input type="text" id="point_a" name="point_a" size="47" required />
+    <br /><br /><br /><br /><br />
+
+    <label for="distance" style="color: #144d41">
+      How far from route would you travel? (per mile)
+    </label>
+    <br />
+    <label class="btn btn-primary active">
+      <input type="radio" name="options" id="option1" checked /> along road
+    </label>
+    <label class="btn btn-primary">
+      <input type="radio" name="options" id="option2" /> 10 min
+    </label>
+    <label class="btn btn-primary">
+      <input type="radio" name="options" id="option3" /> 30 min
+    </label>
+
+    <br /><br /><br /><br /><br />
+
+    <label for="distance" style="color: #144d41">
+      How far from route would you travel? (per mile)
+    </label>
+    <br /><br />
+
+    <label for="key_words" style="color: #144d41"> Choose key words </label>
+
+    <label><input type="checkbox" name="test" value="1" />food</label>
+    <label><input type="checkbox" name="test" value="2" />view point</label>
+    <label><input type="checkbox" name="test" value="3" />hike</label>
+    <label><input type="checkbox" name="test" value="4" />thrift</label>
+    <label><input type="checkbox" name="test" value="5" />beauty</label>
+    <label><input type="checkbox" name="test" value="6" />grocery</label>
+    <label><input type="checkbox" name="test" value="7" />gas</label>
+    <label><input type="checkbox" name="test" value="8" />historical</label>
+    <label><input type="checkbox" name="test" value="9" />bar</label>
+    <label><input type="checkbox" name="test" value="10" />bewery</label>
+    <label><input type="checkbox" name="test" value="11" />local</label>
+    <label><input type="checkbox" name="test" value="12" />park</label>
+
+    <br /><br /><br />
+    <app-submit></app-submit>
+  </form>
+</div>
+
+<!-- add functionality to read num_stops and show correct number of points (a-d) -->
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
